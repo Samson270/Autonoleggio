@@ -52,4 +52,9 @@ public class UtenteService {
 			return new LoginMessage("Email Not Exist", null, false);
 		}
 	}
+
+	public Long getNumeroUtenti()
+	{
+		return utenteRepository.count();
+	}
 }

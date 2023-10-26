@@ -19,8 +19,6 @@ public class UtenteController {
 	
 	@Autowired
 	UtenteService utenteService;
-	@Autowired
-	UtenteRepository utenteRepository;
 	
 	@PostMapping(path="/save")
 	public String addUser(@RequestBody UtenteDTO dto) {
@@ -38,7 +36,6 @@ public class UtenteController {
 	@GetMapping(path="/count")
 	public Long getCountUsers()
 	{
-		return utenteRepository.count();
+		return utenteService.getNumeroUtenti();
 	}
-
 }
