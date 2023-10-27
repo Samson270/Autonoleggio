@@ -14,4 +14,6 @@ public interface PrenotazioneRepository extends JpaRepository<PrenotazioneEntity
 	Optional<PrenotazioneEntity> findByDataRitiroBetween(LocalDate d1, LocalDate d2);
 	
 	Optional<PrenotazioneEntity> findByDataRitornoBetween(LocalDate d1, LocalDate d2);
+
+	Optional<PrenotazioneEntity> findByTarga(String targa);
 }

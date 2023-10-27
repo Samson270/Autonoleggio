@@ -27,8 +27,8 @@ public class PrenotazioneEntity {
 	@Column(name="username")
 	private String username;
 	
-	@Column(name="targaMacchina")
-	private String targaMacchina;
+	@Column(name="targa")
+	private String targa;
 	
 	@Column(name="dataRitiro")
 	private LocalDate dataRitiro;
@@ -36,12 +36,12 @@ public class PrenotazioneEntity {
 	@Column(name="dataRitorno")
 	private LocalDate dataRitorno;
 
-	public PrenotazioneEntity(String nomeCliente, String cognomeCliente, String username, String targaMacchina, LocalDate dataRitiro,
+	public PrenotazioneEntity(String nomeCliente, String cognomeCliente, String username, String targa, LocalDate dataRitiro,
 			LocalDate dataRitorno) {
 		this.nomeCliente = nomeCliente;
 		this.cognomeCliente = cognomeCliente;
 		this.username = username;
-		this.targaMacchina = targaMacchina;
+		this.targa = targa;
 		this.dataRitiro = dataRitiro;
 		this.dataRitorno = dataRitorno;
 	}
